@@ -1,0 +1,16 @@
+l1= [15, 2, 19, 11, 5, 6]
+l2= []
+
+# Loop to sort the elements
+for i in range(len(l1)):
+    
+    min_val = l1[0]
+    for j in range(1, len(l1)):
+        if l1[j] < min_val:
+            min_val = l1[j]
+            
+    l2.append(min_val)
+    
+    l1.remove(min_val)
+    
+print("In ascending order:", l2)
